@@ -19,7 +19,6 @@ if "%choix%"=="lance Google" goto :b
 if "%choix%"=="Lance google" goto :b
 if "%choix%"=="lance google" goto :b
 if "%choix%"=="Lance Google" goto :b
-if "%choix%"=="Lance GooGle" goto :b
 
 if "%choix%"=="Lance youtube" goto :c
 if "%choix%"=="Lance Youtube" goto :c
