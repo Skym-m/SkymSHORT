@@ -42,6 +42,8 @@ if "%choix%"=="discord" goto :d
 
 if "%choix%"=="Lance Slack" goto:e
 
+if "%choix%"=="Stop" goto:f
+if "%choix%"=="bisous" goto:f
 
 :a
 echo.
@@ -85,3 +87,10 @@ start https://slack.com/
 pause>nul
 cls
 goto :MENU
+
+:f
+echo.
+echo Ciao BG...
+pause>nul
+echo off
+cls
