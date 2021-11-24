@@ -40,10 +40,12 @@ if "%choix%"=="lance Discord" goto :d
 if "%choix%"=="Discord" goto :d
 if "%choix%"=="discord" goto :d
 
+if "%choix%"=="Lance Slack" goto:e
+
 
 :a
 echo.
-echo Voici la liste des commandes presentes sur votre version d'AlphaShortCut V.Cmd
+echo Voici la liste des commandes presentes sur votre version d'Alpha-Short-ShortCut CMD V.0.1 :
 echo.
 echo 1. Lance google
 echo 2. Lance youtube
@@ -54,7 +56,7 @@ goto :MENU
 
 :b
 echo.
-echo Lancement de Google.com
+echo Lancement de Google...
 start https://www.google.com/
 pause>nul
 cls
@@ -70,8 +72,16 @@ goto :MENU
 
 :d
 echo.
-echo Lancement de discord
+echo Lancement de Discord.
 start https://discord.com/
+pause>nul
+cls
+goto :MENU
+
+:e
+echo.
+echo Recherche de Slack...
+start https://slack.com/
 pause>nul
 cls
 goto :MENU
