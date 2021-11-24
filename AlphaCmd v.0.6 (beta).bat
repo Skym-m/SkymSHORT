@@ -1,7 +1,7 @@
 @echo off
-title AlphaCmd 1.6
-echo Salut je suis AlphaShortCut V.Cmd 1.6, Votre assistant personnel dans le cmd.
-set /p choix=Si vous avez besoin d'aide, tapez help ! (appuyez sur entree) 
+title AlphaCmd 0.1
+echo Salut je suis AlphaShortCut V.Cmd 0.1, Votre assistant personnel dans le cmd.
+set /p choix=Si vous avez besoin d'aide, tapez "help" ! (appuyez sur entree) 
 :MENU
 echo.
 set /p choix=Que voulez vous faire :
