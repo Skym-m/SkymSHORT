@@ -1,6 +1,6 @@
 @echo off
-title AlphaCmd 0.1
-echo Salut je suis AlphaShortCut V.Cmd 0.1, Votre assistant personnel dans le cmd.
+title AlphaCmd 0.1.1
+echo Salut je suis AlphaShortCut V.Cmd 0.1.1, Votre assistant personnel dans le cmd.
 set /p choix=Si vous avez besoin d'aide, tapez "help" ! (appuyez sur entree) 
 :MENU
 echo.
@@ -41,17 +41,36 @@ if "%choix%"=="Discord" goto :d
 if "%choix%"=="discord" goto :d
 
 if "%choix%"=="Lance Slack" goto:e
+if "%choix%"=="Slack" goto:e
+if "%choix%"=="slack" goto:e
+if "%choix%"=="Lance slack" goto:e
 
-if "%choix%"=="Stop" goto:f
-if "%choix%"=="bisous" goto:f
+if "%choix%"=="Lance EnvisiEarth" goto:f
+if "%choix%"=="lance EnvisiEarth" goto:f
+if "%choix%"=="Lance envisiearth" goto:f
+if "%choix%"=="EnvisiEarth" goto:f
+if "%choix%"=="envisiearth" goto:f
+
+if "%choix%"=="Lance EvGames" goto:g
+if "%choix%"=="lance EvGames" goto:g
+if "%choix%"=="Lance evgames" goto:g
+if "%choix%"=="EvGames" goto:g
+if "%choix%"=="evgames" goto:g
+
+if "%choix%"=="Stop" goto:shutdown
+if "%choix%"=="bisous" goto:shutdown
+if "%choix%"=="ciao" goto:shutdown
 
 :a
 echo.
-echo Voici la liste des commandes presentes sur votre version d'Alpha-Short-ShortCut CMD V.0.1 :
+echo Voici la liste des commandes presentes sur votre version d'Alpha-Short-ShortCut CMD V.0.1.1 :
 echo.
 echo 1. Lance google
 echo 2. Lance youtube
 echo 3. Lance discord
+echo 4. Lance Slack
+echo 5. Lance EnvisiEarth
+echo 6. Lance EvGames
 pause>nul
 cls
 goto :MENU
@@ -90,7 +109,23 @@ goto :MENU
 
 :f
 echo.
-echo Ciao BG...
+echo Recherche d'EnvisiEarth...
+start https://envisiearth.fr/
+pause>nul
+cls
+goto :MENU
+
+:g
+echo.
+echo Recherche d'EvGames...
+start https://evgames.fr/
+pause>nul
+cls
+goto :MENU
+
+:shutdown
+echo.
+echo Ciao BG ! (Appuyez sur entrée pour quitter)
 pause>nul
 echo off
 cls
