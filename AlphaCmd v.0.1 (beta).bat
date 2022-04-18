@@ -14,6 +14,14 @@ if "%choix%"=="HELP" goto :a
 if "%choix%"=="helP" goto :a
 if "%choix%"=="heLP" goto :a
 if "%choix%"=="hELP" goto :a
+if "%choix%"=="aide" goto :a
+if "%choix%"=="Aide" goto :a
+if "%choix%"=="AIDe" goto :a
+if "%choix%"=="AIde" goto :a
+if "%choix%"=="AIDE" goto :a
+if "%choix%"=="aidE" goto :a
+if "%choix%"=="aidE" goto :a
+if "%choix%"=="aIDE" goto :a
 
 if "%choix%"=="lance Google" goto :b
 if "%choix%"=="Lance google" goto :b
